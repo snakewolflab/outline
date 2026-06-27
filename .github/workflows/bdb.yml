@@ -1,0 +1,38 @@
+name: Build and Deploy to Build Branch
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # 手動実行を可能にする設定
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' # package.jsonのエンジンスペックに合わせて22を指定
+          cache: 'yarn'
+
+      - name: Install Dependencies
+        run: |
+          yarn install --immutable
+
+      - name: Run Build Script
+        run: |
+          yarn build
+        env:
+          NODE_ENV: production
+
+      - name: Deploy to build branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: build # 成果物をプッシュするターゲットブランチ
+          folder: build # package.json内のrimraf buildやstartのパスから、成果物ディレクトリを指定
+          clean: true # push時に古いファイルを削除する（必要に応じてfalseに変更してください）
