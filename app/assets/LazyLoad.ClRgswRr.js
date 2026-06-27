@@ -1,0 +1,1 @@
+import{M as e}from"./index.CHF0CgVb.js";function t(t,n={}){let{retries:r,interval:i,exportName:a}=n,o=a?()=>t().then(e=>({default:e[a]})):t;return{Component:e(o,r,i),preload:o}}export{t};

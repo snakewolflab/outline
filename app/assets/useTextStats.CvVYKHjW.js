@@ -1,0 +1,1 @@
+import{i as e}from"./collections.C1xZeKhg.js";function t(t,r=``){let i=n(t),a=e(),o=Array.from(t.matchAll(a));return{total:{words:i,characters:t.length,emoji:o.length??0,readingTime:Math.max(1,Math.floor(i/200))},selected:{words:n(r),characters:r.length}}}function n(e){let t=e.trim();return t?t.replace(/-/g,` `).split(/\s+/g).length:0}export{t};

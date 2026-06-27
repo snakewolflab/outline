@@ -1,0 +1,1 @@
+var e={code:1009,reason:`Document Too Large`},t={code:4401,reason:`Authentication Failed`},n={code:4403,reason:`Authorization Failed`},r={code:4503,reason:`Too Many Connections`},i={code:4999,reason:`Editor Update Required`};export{r as a,i,n,e as r,t};

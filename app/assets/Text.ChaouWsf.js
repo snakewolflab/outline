@@ -1,0 +1,1 @@
+import{t as e}from"./Text.DjIJ7ekC.js";var t=e;export{t};

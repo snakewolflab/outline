@@ -1,0 +1,1 @@
+import{t as e}from"./useCurrentUser.yDT7QBRq.js";function t(){return e({rejectOnEmpty:!1})?.language}export{t};

@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{en as t}from"./vendor-react.BDv3YiQX.js";import{t as n}from"./useEventListener.C_K9fUNE.js";var r=e(t());function i(e,t,i={}){let a=r.useCallback(n=>{!e.current||e.current.contains(n.target)||t?.(n)},[e,t]);n(`pointerdown`,a,window,i),n(`touchstart`,a,window,i)}export{i as t};

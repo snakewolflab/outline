@@ -1,0 +1,29 @@
+import{At as e,D as t,Ot as n,Qt as r}from"./vendor-react.BDv3YiQX.js";import{a as i}from"./vendor-framer-motion.CmOZgGZV.js";import{r as a}from"./mobxreact.esm.BaBZO6aD.js";import{F as o}from"./vendor-es-toolkit.XcNOARzK.js";import{t as s}from"./env.DFiVzB6Q.js";import{a as c}from"./styles.3HqXuy1I.js";import{t as l}from"./useStores.C2HL3oms.js";import{c as u,s as d}from"./vendor-styled.BLG-ZaDH.js";import{t as f}from"./lib.CIyroSo6.js";import{t as p}from"./Text.ChaouWsf.js";import{t as m}from"./Flex.DJ6mR3Bq.js";import{T as h,_ as g,g as _,u as v,z as y}from"./index.CHF0CgVb.js";import{t as b}from"./useCurrentUser.yDT7QBRq.js";import{n as x}from"./language.Cn_9rZbC.js";import{r as S}from"./DocumentContext.QKzyz-MH.js";import{t as C}from"./useCurrentTeam.Bg4emvG8.js";import{t as w}from"./usePolicy.CPwNtdBL.js";import{t as T}from"./ButtonLink.Fzf_wCFW.js";import{t as E}from"./Actions.B8zShC8m.js";import{t as D}from"./Scene.9CTEOJZr.js";import{t as O}from"./PaginatedDocumentList.D7tKMyQQ.js";import{t as k}from"./InputSearchPage.Dhq7Btj4.js";import{t as A}from"./PinnedDocuments.D-lBvji3.js";import{n as j,t as M}from"./Tabs.BBwlgy1N.js";import{t as N}from"./NewDocumentMenu.BEUSbHHA.js";d();var P=f(),F=r();function I({className:e}){return(0,F.jsxs)(`svg`,{width:`32`,height:`32`,viewBox:`0 0 32 32`,fill:`none`,xmlns:`http://www.w3.org/2000/svg`,className:e,children:[(0,F.jsx)(`path`,{fillRule:`evenodd`,clipRule:`evenodd`,d:`M21 18H16L14 16V6C14 4.89543 14.8954 4 16 4H28C29.1046 4 30 4.89543 30 6V16C30 17.1046 29.1046 18 28 18H27L25.4142 19.5858C24.6332 20.3668 23.3668 20.3668 22.5858 19.5858L21 18ZM16 15.1716V6H28V16H27H26.1716L25.5858 16.5858L24 18.1716L22.4142 16.5858L21.8284 16H21H16.8284L16 15.1716Z`,fill:`currentColor`}),(0,F.jsx)(`path`,{fillRule:`evenodd`,clipRule:`evenodd`,d:`M16 13H4C2.89543 13 2 13.8954 2 15V25C2 26.1046 2.89543 27 4 27H5L6.58579 28.5858C7.36684 29.3668 8.63316 29.3668 9.41421 28.5858L11 27H16C17.1046 27 18 26.1046 18 25V15C18 13.8954 17.1046 13 16 13ZM9 17L6 16.9681C6 16.9681 5 17.016 5 18C5 18.984 6 19 6 19H8.5H10C10 19 9.57627 20.1885 8.38983 21.0831C7.20339 21.9777 5.7197 23 5.7197 23C5.7197 23 4.99153 23.6054 5.5 24.5C6.00847 25.3946 7 24.8403 7 24.8403L9.74576 22.8722L11.9492 24.6614C11.9492 24.6614 12.6271 25.3771 13.3051 24.4825C13.9831 23.5879 13.3051 23.0512 13.3051 23.0512L11.1017 21.262C11.1017 21.262 11.5 21 12 20L12.5 19H14C14 19 15 19.0319 15 18C15 16.9681 14 16.9681 14 16.9681L11 17V16C11 16 11.0169 15 10 15C8.98305 15 9 16 9 16V17Z`,fill:`currentColor`}),(0,F.jsx)(`path`,{d:`M23.6672 12.5221L23.5526 12.1816H23.1934H20.8818H20.5215L20.4075 12.5235L20.082 13.5H19.2196L21.2292 8.10156H21.8774L21.5587 9.06116L20.7633 11.4562L20.5449 12.1138H21.2378H22.8374H23.5327L23.3114 11.4546L22.5072 9.05959L22.1855 8.10156H22.768L24.7887 13.5H23.9964L23.6672 12.5221Z`,fill:`currentColor`,stroke:`currentColor`})]})}function L(){let{ui:e}=l(),{t:n}=t(),r=b(),i=x();if(i===`en_US`||i===r.language||!g.includes(i))return null;let a=o(_,e=>e.value===i),c=a?a.label:``,u=s.APP_NAME;return(0,F.jsx)(R,{animate:{opacity:1,y:0},exit:{opacity:0,y:-20},transition:{duration:.2},children:(0,F.jsxs)(m,{align:`center`,gap:12,children:[(0,F.jsx)(I,{}),(0,F.jsxs)(`span`,{children:[(0,F.jsxs)(p,{children:[u,` is available in your language – `,c,`, would you like to change?`]}),(0,F.jsx)(`br`,{}),(0,F.jsx)(z,{onClick:async()=>{e.set({languagePromptDismissed:!0}),await r.save({language:i})},children:n(`Change Language`)}),` `,`·`,` `,(0,F.jsx)(z,{onClick:()=>e.set({languagePromptDismissed:!0}),children:n(`Dismiss`)})]})]})})}var R=u(i.p)`
+  color: ${e=>e.theme.text};
+  border: 1px solid ${e=>e.theme.divider};
+  padding: 20px;
+  margin-top: 12px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+
+  a {
+    color: ${e=>e.theme.text};
+    font-weight: 500;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+`,z=u(T)`
+  cursor: var(--cursor-pointer);
+  color: ${e=>e.theme.text};
+  font-weight: 500;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;d();function B(){let{documents:r,ui:i}=l(),a=C(),o=b(),{t:s}=t(),c=o?.id,{pins:u,count:d}=y(`home`),f=w(a);return(0,F.jsxs)(D,{icon:(0,F.jsx)(P.HomeIcon,{}),title:s(`Home`),left:(0,F.jsx)(k,{source:`dashboard`,label:s(`Search documents`)}),actions:(0,F.jsx)(E,{children:(0,F.jsx)(N,{})}),children:[(0,F.jsx)(S,{children:!i.languagePromptDismissed&&(0,F.jsx)(L,{},`language`)}),(0,F.jsx)(h,{children:s(`Home`)}),(0,F.jsx)(A,{pins:u,canUpdate:f.update,placeholderCount:d}),(0,F.jsxs)(V,{children:[(0,F.jsxs)(M,{children:[(0,F.jsx)(j,{to:`/home`,exact:!0,children:s(`Recently viewed`)}),(0,F.jsx)(j,{to:`/home/popular`,exact:!0,children:s(`Popular`)}),(0,F.jsx)(j,{to:`/home/recent`,exact:!0,children:s(`Recently updated`)}),(0,F.jsx)(j,{to:`/home/created`,children:s(`Created by me`)})]}),(0,F.jsxs)(e,{children:[(0,F.jsx)(n,{path:`/home/recent`,children:(0,F.jsx)(O,{documents:r.recentlyUpdated,fetch:r.fetchRecentlyUpdated,empty:(0,F.jsx)(v,{children:s(`Weird, this shouldn't ever be empty`)}),showCollection:!0})}),(0,F.jsx)(n,{path:`/home/popular`,children:(0,F.jsx)(O,{documents:r.popular,fetch:r.fetchPopular,empty:(0,F.jsx)(v,{children:s(`Documents with recent activity will appear here`)}),showCollection:!0},`popular`)}),(0,F.jsx)(n,{path:`/home/created`,children:(0,F.jsx)(O,{documents:r.createdByUser(c),fetch:r.fetchOwned,options:{userId:c},empty:(0,F.jsx)(v,{children:s(`You haven’t created any documents yet`)}),showCollection:!0},`created`)}),(0,F.jsx)(n,{path:`/home`,children:(0,F.jsx)(O,{documents:r.recentlyViewed,fetch:r.fetchRecentlyViewed,empty:(0,F.jsx)(v,{children:s(`Documents you’ve recently viewed will be here for easy access`)}),showCollection:!0},`recent`)})]})]})]})}var V=u.div`
+  position: relative;
+  background: ${c(`background`)};
+`,H=a(B);export{H as default};

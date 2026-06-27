@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{t}from"./isEmail.DoKWMq0z.js";var n=e(t());function r(e,t){return typeof e==`string`&&(0,n.default)(e,t)}export{r as t};

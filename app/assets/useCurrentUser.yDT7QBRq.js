@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{Yt as t}from"./vendor-react.BDv3YiQX.js";import{t as n}from"./useStores.C2HL3oms.js";var r=e(t());function i({rejectOnEmpty:e=!0}={}){let{auth:t}=n();return e&&(0,r.default)(t.user,`user required`),t.user||void 0}export{i as t};

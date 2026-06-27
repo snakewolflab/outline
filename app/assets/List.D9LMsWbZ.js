@@ -1,0 +1,5 @@
+import"./rolldown-runtime.CMxvf4Kt.js";import{D as e,Qt as t,en as n}from"./vendor-react.BDv3YiQX.js";import{t as r}from"./useStores.C2HL3oms.js";import{c as i,s as a}from"./vendor-styled.BLG-ZaDH.js";import{t as o}from"./Text.ChaouWsf.js";import{D as s}from"./index.CHF0CgVb.js";import{t as c}from"./ConfirmationDialog.DoECaosc.js";import{t as l}from"./ConnectedIcon.d0wO63pX.js";n();var u=t();function d({onClick:t,confirmationMessage:n,...i}){let{t:a}=e(),{dialogs:o}=r();return(0,u.jsx)(s,{icon:(0,u.jsx)(l,{}),neutral:!0,onClick:()=>{o.openModal({title:a(`Disconnect integration`),content:(0,u.jsx)(f,{confirmationMessage:n,onSubmit:t})})},...i,children:a(`Connected`)})}function f({confirmationMessage:t,onSubmit:n}){let{t:r}=e();return(0,u.jsx)(c,{onSubmit:n,submitText:r(`Disconnect`),savingText:`${r(`Disconnecting`)}…`,danger:!0,children:(0,u.jsx)(o,{as:`p`,type:`secondary`,children:t})})}a();var p=i.ol`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+`;export{d as n,p as t};

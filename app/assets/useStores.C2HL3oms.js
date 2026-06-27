@@ -1,0 +1,1 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{en as t}from"./vendor-react.BDv3YiQX.js";import{t as n}from"./mobxreact.esm.BaBZO6aD.js";var r=e(t());function i(){let{rootStore:e}=(0,r.useContext)(n);return e}export{i as t};

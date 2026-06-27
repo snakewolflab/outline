@@ -1,0 +1,3 @@
+import{Qt as e}from"./vendor-react.BDv3YiQX.js";import{m as t}from"./vendor-es-toolkit.XcNOARzK.js";import{c as n,s as r}from"./vendor-styled.BLG-ZaDH.js";import{t as i}from"./Flex.DJ6mR3Bq.js";import{n as a}from"./Fade.DoZVoUzz.js";import{t as o}from"./PlaceholderText.DWw2J9p7.js";r();var s=e(),c=({count:e,className:n,header:r,body:i})=>(0,s.jsx)(a,{children:t(e||2,e=>(0,s.jsxs)(l,{className:n,column:!0,auto:!0,children:[(0,s.jsx)(o,{...r,header:!0,delay:.2*e}),(0,s.jsx)(o,{...i,delay:.2*e})]},e))}),l=n(i)`
+  padding: 10px 0;
+`;export{c as t};

@@ -1,0 +1,1 @@
+import{Dt as e,Qt as t}from"./vendor-react.BDv3YiQX.js";import{t as n}from"./env.DFiVzB6Q.js";import{p as r}from"./routeHelpers.Dp2pk1Po.js";import{t as i}from"./useStores.C2HL3oms.js";var a=t(),o=()=>{let{auth:t}=i();return t.logout({userInitiated:!0,clearCache:!0}),n.OIDC_LOGOUT_URI||t.lastSignedIn===`oidc`?null:(0,a.jsx)(e,{to:r()})};export{o as default};

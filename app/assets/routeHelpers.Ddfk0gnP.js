@@ -1,0 +1,1 @@
+function e(e){return`/settings`+(e?`/${e}`:``)}function t(e){return`/settings/integrations/${e}`}export{e as n,t};

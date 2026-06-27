@@ -1,0 +1,1 @@
+import{c as e,s as t}from"./vendor-styled.BLG-ZaDH.js";import{t as n}from"./Flex.DJ6mR3Bq.js";t();var r=e(n).withConfig({shouldForwardProp:e=>![`spacing`].includes(e)}).attrs(e=>({align:e.align??`center`,gap:e.spacing===void 0?8:e.spacing}))``;r.displayName=`HStack`;export{r as t};

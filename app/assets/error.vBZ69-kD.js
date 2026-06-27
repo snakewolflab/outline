@@ -1,0 +1,1 @@
+function e(e){return e instanceof Error?e:Error(String(e))}function t(e){return e instanceof Error?e.message:String(e)}export{e as n,t};

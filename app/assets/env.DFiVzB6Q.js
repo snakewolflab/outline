@@ -1,0 +1,2 @@
+if(!window.env)throw Error(`Config could not be parsed. 
+See: https://docs.getoutline.com/s/hosting/doc/troubleshooting-HXckrzCqDJ#h-config-could-not-be-parsed`);var e={...window.env,isDevelopment:window.env.ENVIRONMENT===`development`,isTest:window.env.ENVIRONMENT===`test`,isProduction:window.env.ENVIRONMENT===`production`};export{e as t};

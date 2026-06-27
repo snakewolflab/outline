@@ -1,0 +1,3 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{Qt as t,en as n}from"./vendor-react.BDv3YiQX.js";import{c as r,s as i}from"./vendor-styled.BLG-ZaDH.js";import{a}from"./animations.B6M7uYBl.js";var o=e(n());i();var s=t(),c=r.span`
+  animation: ${a} ${e=>e.timing||`250ms`} ease-in-out;
+`,l=({animate:e,children:t})=>{let[n]=(0,o.useState)(e);return n?(0,s.jsx)(c,{children:t}):(0,s.jsx)(s.Fragment,{children:t})};export{c as n,l as t};

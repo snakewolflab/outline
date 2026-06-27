@@ -1,0 +1,1 @@
+import{nt as e}from"./index.CHF0CgVb.js";import{r as t}from"./language.Cn_9rZbC.js";import{t as n}from"./useUserLocale.rzwPfV9U.js";function r(){let r=n();return n=>r?t(n,e(r)):n.toString()}export{r as t};

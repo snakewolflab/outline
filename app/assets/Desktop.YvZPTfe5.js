@@ -1,0 +1,1 @@
+import{f as e,v as t}from"./styles.3HqXuy1I.js";var n,r=class{static hasInsetTitlebar(){return this.isMacApp()}static isMacApp(){return this.isElectron()&&e}static isWindowsApp(){return this.isElectron()&&t}static isElectron(){return navigator?.userAgent?.includes(`Electron`)}};n=r,n.bridge=window.DesktopBridge;export{r as t};

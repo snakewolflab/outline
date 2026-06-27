@@ -1,0 +1,58 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+var _koaRouter = _interopRequireDefault(require("koa-router"));
+var _authentication = _interopRequireDefault(require("../../../middlewares/authentication"));
+var _validate = _interopRequireDefault(require("../../../middlewares/validate"));
+var _models = require("../../../models");
+var _policies = require("../../../policies");
+var _presenters = require("../../../presenters");
+var _pagination = _interopRequireDefault(require("../middlewares/pagination"));
+var T = _interopRequireWildcard(require("./schema"));
+function _interopRequireWildcard(e, t) { if ("function" == typeof WeakMap) var r = new WeakMap(), n = new WeakMap(); return (_interopRequireWildcard = function (e, t) { if (!t && e && e.__esModule) return e; var o, i, f = { __proto__: null, default: e }; if (null === e || "object" != typeof e && "function" != typeof e) return f; if (o = t ? n : r) { if (o.has(e)) return o.get(e); o.set(e, f); } for (const t in e) "default" !== t && {}.hasOwnProperty.call(e, t) && ((i = (o = Object.defineProperty) && Object.getOwnPropertyDescriptor(e, t)) && (i.get || i.set) ? o(f, t, i) : f[t] = e[t]); return f; })(e, t); }
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+const router = new _koaRouter.default();
+router.post("reactions.list", (0, _authentication.default)(), (0, _pagination.default)(), (0, _validate.default)(T.ReactionsListSchema), async ctx => {
+  const {
+    commentId
+  } = ctx.input.body;
+  const {
+    user
+  } = ctx.state.auth;
+  const comment = await _models.Comment.findByPk(commentId, {
+    rejectOnEmpty: true
+  });
+  const document = await _models.Document.findByPk(comment.documentId, {
+    userId: user.id
+  });
+  (0, _policies.authorize)(user, "readReaction", comment);
+  (0, _policies.authorize)(user, "read", document);
+  const where = {
+    commentId
+  };
+  const include = [{
+    model: _models.User,
+    required: true
+  }];
+  const [reactions, total] = await Promise.all([_models.Reaction.findAll({
+    where,
+    include,
+    order: [["createdAt", "DESC"]],
+    offset: ctx.state.pagination.offset,
+    limit: ctx.state.pagination.limit
+  }), _models.Reaction.count({
+    where,
+    include
+  })]);
+  ctx.body = {
+    pagination: {
+      ...ctx.state.pagination,
+      total
+    },
+    data: reactions.map(_presenters.presentReaction)
+  };
+});
+var _default = exports.default = router;

@@ -1,0 +1,1 @@
+var e=RegExp(`^[^A-Za-zÀ-ÖØ-öø-ʸ̀-֐ࠀ-῿Ⰰ-﬜﷾-﹯﻽-￿]*[֑-߿יִ-﷽ﹰ-ﻼ]`),t=new Set([`ar`,`fa`,`he`,`ps`,`ur`,`yi`]);function n(t){return e.test(t)}function r(e){if(!e)return!1;let n=e.toLowerCase().split(/[-_]/)[0];return t.has(n)}export{r as n,n as t};

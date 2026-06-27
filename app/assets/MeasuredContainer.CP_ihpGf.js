@@ -1,0 +1,1 @@
+import"./rolldown-runtime.CMxvf4Kt.js";import{Qt as e,b as t,en as n}from"./vendor-react.BDv3YiQX.js";n();var r=e(),i=({as:e=`div`,name:n,children:i,...a})=>{let[o,s]=t();return(0,r.jsx)(e,{...a,ref:o,style:{[`--${n}-width`]:`${s.width}px`,[`--${n}-height`]:`${s.height}px`},children:i})};export{i as t};

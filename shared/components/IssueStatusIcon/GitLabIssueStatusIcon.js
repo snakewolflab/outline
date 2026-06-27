@@ -1,0 +1,46 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.GitLabIssueStatusIcon = GitLabIssueStatusIcon;
+var _react = _interopRequireDefault(require("react"));
+var _jsxRuntime = require("react/jsx-runtime");
+function _interopRequireDefault(e) { return e && e.__esModule ? e : { default: e }; }
+function GitLabIssueStatusIcon(props) {
+  const {
+    state,
+    className,
+    size = 16
+  } = props;
+  switch (state.name) {
+    case "opened":
+      return /*#__PURE__*/(0, _jsxRuntime.jsxs)("svg", {
+        viewBox: "0 0 16 16",
+        width: size,
+        height: size,
+        fill: state.color,
+        className: className,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+          d: "M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+          d: "M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Z"
+        })]
+      });
+    case "closed":
+      return /*#__PURE__*/(0, _jsxRuntime.jsxs)("svg", {
+        viewBox: "0 0 16 16",
+        width: size,
+        height: size,
+        fill: state.color,
+        className: className,
+        children: [/*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+          d: "M11.28 6.78a.75.75 0 0 0-1.06-1.06L7.25 8.69 5.78 7.22a.75.75 0 0 0-1.06 1.06l2 2a.75.75 0 0 0 1.06 0l3.5-3.5Z"
+        }), /*#__PURE__*/(0, _jsxRuntime.jsx)("path", {
+          d: "M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0Zm-1.5 0a6.5 6.5 0 1 0-13 0 6.5 6.5 0 0 0 13 0Z"
+        })]
+      });
+    default:
+      return null;
+  }
+}

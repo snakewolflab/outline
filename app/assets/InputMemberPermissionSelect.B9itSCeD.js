@@ -1,0 +1,3 @@
+import{o as e}from"./rolldown-runtime.CMxvf4Kt.js";import{D as t,Qt as n,en as r}from"./vendor-react.BDv3YiQX.js";import{a as i}from"./styles.3HqXuy1I.js";import{c as a,s as o}from"./vendor-styled.BLG-ZaDH.js";import"./index.CHF0CgVb.js";import{n as s}from"./InputSelectPermission.BjNMUyYO.js";var c=e(r());o();var l=n();function u(e){let{value:n,onChange:r,...i}=e,{t:a}=t();return(0,l.jsx)(d,{options:c.useMemo(()=>e.permissions.reduce((e,t)=>(t.divider&&e.push({type:`separator`}),e.push({...t,type:`item`}),e),[]),[e.permissions]),value:n||`__empty__`,onChange:r,label:a(`Permissions`),labelHidden:!0,nude:!0,...i})}var d=a(s)`
+  color: ${i(`textSecondary`)};
+`;export{u as t};

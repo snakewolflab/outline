@@ -1,0 +1,1 @@
+import{r as e}from"./tiny-cookie.Ot6E6ho9.js";import{r as t}from"./random.DIqG7W0r.js";function n(n){let r=t(32);return e(n,r,{path:`/`,"max-age":600,samesite:`Lax`,secure:window.location.protocol===`https:`}),r}export{n as t};
