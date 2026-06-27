@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-  workflow_dispatch: # 手動実行を可能にする設定
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -17,8 +17,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # package.jsonのエンジンスペックに合わせて22を指定
+          node-version: '22'
           cache: 'yarn'
+
+      # ─── ここから追加 ───
+      - name: Enable Corepack
+        run: |
+          corepack enable
+          corepack prepare yarn@4.11.0 --activate
+      # ─── ここまで追加 ───
 
       - name: Install Dependencies
         run: |
@@ -33,6 +40,6 @@ jobs:
       - name: Deploy to build branch
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: build # 成果物をプッシュするターゲットブランチ
-          folder: build # package.json内のrimraf buildやstartのパスから、成果物ディレクトリを指定
-          clean: true # push時に古いファイルを削除する（必要に応じてfalseに変更してください）
+          branch: build
+          folder: build
+          clean: true
